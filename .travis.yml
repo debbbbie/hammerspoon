@@ -25,15 +25,15 @@ notifications:
     use_notice: true
     skip_join: true
 addons:
-  artifacts:
-    s3_region: "eu-west-1"
-    bucket: hammerspoontravisartifacts
-    key:
-      secure: "HJ4xnVX6PbU+H/baT2qEAzkAKi5H3LBTDgrYEGAJ77yxB6fJbyKz19Es+pCVsD1Bqv/cNS44MiVhL8oxGmLZovdCzZeDnir578qzUKiTNAfw2WoCOGmf8Jwp5gD726mCnpLtqefiHADK9VQ53p/0DxWMNAdPAqivG8G+fbd7D+Q="
-    secret:
-      secure: "DKxRobGmQWTxQeWNsDMWORe4FBBH8tdtlT43FTSX5/pIoJAfxBV18EHwliI2YRrxtm0kcpsZJ8rf7oeRgezPuKD2auu2CQIxVapVnOG8Lz6wEM8aHVq9OT4jbTusn1m/slKHKe8sjyJanH9thSxe3w1Q8evXzPdRUtnskXAs7Vg="
-    paths:
-      - $HOME/build.log
-      - $HOME/test.log
-      - $HOME/codecov.log
-    target_paths: logs/$TRAVIS_BUILD_NUMBER
+  #artifacts:
+  #  s3_region: "eu-west-1"
+  #  bucket: hammerspoontravisartifacts
+  #  key:
+  #    secure: "HJ4xnVX6PbU+H/baT2qEAzkAKi5H3LBTDgrYEGAJ77yxB6fJbyKz19Es+pCVsD1Bqv/cNS44MiVhL8oxGmLZovdCzZeDnir578qzUKiTNAfw2WoCOGmf8Jwp5gD726mCnpLtqefiHADK9VQ53p/0DxWMNAdPAqivG8G+fbd7D+Q="
+  #  secret:
+  #    secure: "DKxRobGmQWTxQeWNsDMWORe4FBBH8tdtlT43FTSX5/pIoJAfxBV18EHwliI2YRrxtm0kcpsZJ8rf7oeRgezPuKD2auu2CQIxVapVnOG8Lz6wEM8aHVq9OT4jbTusn1m/slKHKe8sjyJanH9thSxe3w1Q8evXzPdRUtnskXAs7Vg="
+  #  paths:
+  #    - $HOME/build.log
+  #    - $HOME/test.log
+  #    - $HOME/codecov.log
+  #  target_paths: logs/$TRAVIS_BUILD_NUMBER
