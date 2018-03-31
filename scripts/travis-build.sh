@@ -45,7 +45,7 @@ export PING_LOOP_PID=$!
 
 # Build command
 #mvn clean install >> $OUTPUT_FILE 2>&1
-xcodebuild -workspace Hammerspoon.xcworkspace -scheme Release ${XCODE_ARGS} | tee $OUTPUT_FILE | xcpretty -f `xcpretty-travis-profiler-formatter`
+xcodebuild -workspace Hammerspoon.xcworkspace -scheme Release ${XCODE_ARGS} | tee $OUTPUT_FILE | xcpretty -f `xcpretty-travis-profiler-formatter`  | grep -A 5 error:
 
 echo "Log file: "
 ls -l $OUTPUT_FILE
