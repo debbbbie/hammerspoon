@@ -25,6 +25,8 @@ notifications:
     use_notice: true
     skip_join: true
 addons:
+  artifacts:
+    debug: true
   #artifacts:
   #  s3_region: "eu-west-1"
   #  bucket: hammerspoontravisartifacts
